@@ -1,0 +1,18 @@
+﻿Построение начато 10.10.2016 23:49:50.
+     1>Проект "G:\Лобач\АиСД\mp2-lab2-matrix-master\mp2-lab2-matrix-master\sln\vc10\sample_utmatrix.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Обращение к "Debug\sample_utmatrix.unsuccessfulbuild".
+       ClCompile:
+         E:\Programs\VisualStudio2010\VC\bin\CL.exe /c /I../../include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\samples\sample_matrix.cpp
+         sample_matrix.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\sample_utmatrix.exe.embed.manifest.res" Debug\sample_utmatrix_manifest.rc 
+       Link:
+         E:\Programs\VisualStudio2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Лобач\АиСД\mp2-lab2-matrix-master\mp2-lab2-matrix-master\sln\vc10\Debug\sample_utmatrix.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\sample_utmatrix.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\Лобач\АиСД\mp2-lab2-matrix-master\mp2-lab2-matrix-master\sln\vc10\Debug\sample_utmatrix.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Лобач\АиСД\mp2-lab2-matrix-master\mp2-lab2-matrix-master\sln\vc10\Debug\sample_utmatrix.lib" /MACHINE:X86 Debug\sample_utmatrix.exe.embed.manifest.res
+         Debug\sample_matrix.obj
+     1>LINK : fatal error LNK1123: сбой при преобразовании в COFF: файл недопустим или поврежден
+     1>Построение проекта "G:\Лобач\АиСД\mp2-lab2-matrix-master\mp2-lab2-matrix-master\sln\vc10\sample_utmatrix.vcxproj" завершено (целевые объекты build) с ошибкой.
+
+СБОЙ построения.
+
+Затраченное время: 00:00:02.17
