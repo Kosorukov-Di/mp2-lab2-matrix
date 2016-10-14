@@ -1,0 +1,17 @@
+﻿Построение начато 11.10.2016 3:34:34.
+     1>Проект "G:\Лобач\АиСД\mp2-lab2-matrix-master\mp2-lab2-matrix-master\sln\vc10\gtest.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\gtest.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+       Lib:
+         Для всех выходных данных обновления не требуется.
+         gtest.vcxproj -> G:\Лобач\АиСД\mp2-lab2-matrix-master\mp2-lab2-matrix-master\sln\vc10\Debug\gtest.lib
+       FinalizeBuildStatus:
+         Файл "Debug\gtest.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\gtest.lastbuildstate".
+     1>Построение проекта "G:\Лобач\АиСД\mp2-lab2-matrix-master\mp2-lab2-matrix-master\sln\vc10\gtest.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.04
