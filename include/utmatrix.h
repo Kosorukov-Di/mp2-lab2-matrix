@@ -68,10 +68,11 @@ TVector<ValType>::TVector(int s, int si)
 	StartIndex = si;
 	Size = s;
 	pVector = new ValType[Size];
-	if(typeid(ValType)==typeid(int))
+	for (int i = 0; i < Size; i++) pVector[i] = ValType(0);
+	/*if(typeid(ValType)==typeid(int))
 		for (int i = 0; i < Size; i++) pVector[i] = 0;
 	else
-		for (int i = 0; i < Size; i++) pVector[i] = ValType(s);
+		for (int i = 0; i < Size; i++) pVector[i] = ValType(s);*/
 } /*-------------------------------------------------------------------------*/
 
 template <class ValType> //конструктор копирования
@@ -95,14 +96,14 @@ template <class ValType> // доступ
 ValType& TVector<ValType>::operator[](int pos)
 {
 	if ((pos < 0) || (pos >= Size)) throw "operator[]: wrong index";
-	return pVector[pos];
+	return pVector[pos - StartIndex];
 } /*-------------------------------------------------------------------------*/
 
 template <class ValType> // сравнение
 bool TVector<ValType>::operator==(const TVector &v) const
 {
 	if (v.Size != Size || v.StartIndex != StartIndex) return false;
-	for (int i = StartIndex; i < Size; i++)
+	for (int i = 0; i < Size; i++)
 		if (pVector[i] != v.pVector[i]) return false;
 	return true;
 } /*-------------------------------------------------------------------------*/
@@ -215,6 +216,7 @@ public:
 template <class ValType>
 TMatrix<ValType>::TMatrix(int s): TVector<TVector<ValType> >(s)
 {
+	//////////////////////////////////////////////////////////
 	if (s > MAX_MATRIX_SIZE) throw "TMatrix: too large index";
 } /*-------------------------------------------------------------------------*/
 
